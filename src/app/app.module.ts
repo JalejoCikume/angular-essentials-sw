@@ -1,3 +1,4 @@
+import { LogService } from './log.service';
 import { StarWarsService } from './star-wars.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -17,7 +18,7 @@ import { ItemComponent } from './item/item.component';
   imports: [
     BrowserModule
   ],
-  providers: [StarWarsService],
+  providers: [StarWarsService, LogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
